@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Updated Rover Positions</title>
+</head>
+<body>
+<h2>The updated Rover positions are as follows</h2>
+    <ul style="list-style-type:none;">
+        <h3>
+        {% for item in out %}
+            {%if 'None' not in item %}
+                <li>{{item}}</li>
+                <p></p>
+            {%endif%}
+        {% endfor %}
+        </h3>
+    </ul>
+</body>
+</html>
